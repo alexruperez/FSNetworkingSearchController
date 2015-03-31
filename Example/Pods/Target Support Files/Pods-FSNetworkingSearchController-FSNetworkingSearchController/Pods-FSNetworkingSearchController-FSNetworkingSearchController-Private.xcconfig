@@ -1,0 +1,6 @@
+#include "Pods-FSNetworkingSearchController-FSNetworkingSearchController.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/FSNetworkingSearchController" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FSNetworking" "${PODS_ROOT}/Headers/Public/FSNetworkingSearchController"
+OTHER_LDFLAGS = ${PODS_FSNETWORKINGSEARCHCONTROLLER_FSNETWORKINGSEARCHCONTROLLER_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

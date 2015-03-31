@@ -1,0 +1,1 @@
+PODS_TESTS_FSNETWORKINGSEARCHCONTROLLER_OTHER_LDFLAGS = -framework "CoreLocation" -framework "UIKit"

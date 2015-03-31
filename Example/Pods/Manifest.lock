@@ -1,0 +1,17 @@
+PODS:
+  - FSNetworking (0.0.1)
+  - FSNetworkingSearchController (0.1.0):
+    - FSNetworking (~> 0.0)
+
+DEPENDENCIES:
+  - FSNetworkingSearchController (from `../`)
+
+EXTERNAL SOURCES:
+  FSNetworkingSearchController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FSNetworking: 596048151bffc5917b2bcfa3a840624f49e309fa
+  FSNetworkingSearchController: 4d556751a15b27e0e626a69f1337e4bef94d6362
+
+COCOAPODS: 0.36.1

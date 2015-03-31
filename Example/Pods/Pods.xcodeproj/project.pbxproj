@@ -1,0 +1,1177 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B5600661F32547D1FB7446 /* FSN_categories.h in Headers */ = {isa = PBXBuildFile; fileRef = FA13E268BBD8F563FED4921E /* FSN_categories.h */; };
+		1B3060C85A6B50FD952E8000 /* FSNetworkingCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFD9D1B94D14829B9EA88C /* FSNetworkingCommunicator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		1ECDEAC4E093C32B7A96A2D7 /* FSNetworkingCommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = D72E68C9A5C08040C27B6C6F /* FSNetworkingCommunicator.h */; };
+		29194637784D919A873F1BB0 /* FSNetworkingCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6DFD9D1B94D14829B9EA88C /* FSNetworkingCommunicator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		299DA7B1296D6F93EA603394 /* FSNetworkingViewHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DF57B89997A8D33D92DEF /* FSNetworkingViewHandler.h */; };
+		2B26DD485882BDF51B553B54 /* Pods-Tests-FSNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69309DB77BF107971BC1ABA3 /* Pods-Tests-FSNetworking-dummy.m */; };
+		33062D1068D3AE54C1D0154D /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFF1D50AA2354FC761347F /* FSN_categories.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3B8CAE4350CA7421B30DBAA8 /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D809415571979437868522 /* FSNData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3DF2229336C3B2437EE5AEB5 /* FSNetworkingSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19489471069AE2A0761995FE /* FSNetworkingSearchController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		3EC1A896F369D48B6E46351B /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 343A2F85C3C3289DFB38C622 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-dummy.m */; };
+		3F7BE08D4CEAF400A7DD97F3 /* FSNetworkingCommunicator.h in Headers */ = {isa = PBXBuildFile; fileRef = D72E68C9A5C08040C27B6C6F /* FSNetworkingCommunicator.h */; };
+		443D3BE710B5CEF2E369E5F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3432B550C0200EC1665AAE /* UIKit.framework */; };
+		4F3CE12482E4BCC6AE455EA7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3432B550C0200EC1665AAE /* UIKit.framework */; };
+		4F88321953B289AB9DDB5CF0 /* FSNetworkingSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19489471069AE2A0761995FE /* FSNetworkingSearchController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		54349FF97419182BC9D0C598 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7207CFE60A242E0565F9139C /* CoreLocation.framework */; };
+		5A3E43812302733485BDB5B9 /* FSNConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52B7F15D6F93C78CEC3608 /* FSNConnection.h */; };
+		5A41B87EC7A6BDEC5F81FBDE /* FSNetworkingViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9882C33E8448279EC277A59 /* FSNetworkingViewHandler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		5CE92611AD173AD8CB2BA1E4 /* Pods-Tests-FSNetworkingSearchController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFB538C71C931113406B273 /* Pods-Tests-FSNetworkingSearchController-dummy.m */; };
+		71C509EFB73AF7D9DB69B762 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC729E5F019B3AB3ABD6308 /* Foundation.framework */; };
+		7734E83FFA2243C15FD3BE3E /* FSNData.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B9B97B8CA170B64611493D /* FSNData.h */; };
+		7FD4BD900944792CB1BC73A7 /* FSNData.h in Headers */ = {isa = PBXBuildFile; fileRef = 32B9B97B8CA170B64611493D /* FSNData.h */; };
+		8335E375D4078EE735D4F1D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC729E5F019B3AB3ABD6308 /* Foundation.framework */; };
+		846833E07172508F98A599ED /* FSNetworkingViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B9882C33E8448279EC277A59 /* FSNetworkingViewHandler.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		907AD5C80199061AB29A4CC0 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D254C4C8E23B81D6CD5BE6C /* FSNConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		90F015187983794B086038BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC729E5F019B3AB3ABD6308 /* Foundation.framework */; };
+		914C0C3AA35916B114716119 /* FSN_categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CAFF1D50AA2354FC761347F /* FSN_categories.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		91E84C7E621ADA33D547146A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC729E5F019B3AB3ABD6308 /* Foundation.framework */; };
+		96115A6979FD49D9901D73A6 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E40B8FFA7416ED1585447C1E /* Pods-Tests-dummy.m */; };
+		AC452CEB0312DD07CC2D9105 /* FSNConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A52B7F15D6F93C78CEC3608 /* FSNConnection.h */; };
+		B6652AF49C905D731E950E36 /* Pods-FSNetworkingSearchController-FSNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9612A900BA3B3C93B20C5D /* Pods-FSNetworkingSearchController-FSNetworking-dummy.m */; };
+		B6FFA48F27BA425E068299B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC729E5F019B3AB3ABD6308 /* Foundation.framework */; };
+		C354A905006E8BCF15E039A8 /* FSNConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D254C4C8E23B81D6CD5BE6C /* FSNConnection.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		CECFFF42E03DB1AC0FBE3A3A /* Pods-FSNetworkingSearchController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D87F2246B60E84609142C37 /* Pods-FSNetworkingSearchController-dummy.m */; };
+		D9BED5FF9A77D0557A34CED1 /* FSNetworkingSearchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D198937D2B5F2E4A0D10C47 /* FSNetworkingSearchController.h */; };
+		DB03ADE1EF10ED261E6C38A1 /* FSN_categories.h in Headers */ = {isa = PBXBuildFile; fileRef = FA13E268BBD8F563FED4921E /* FSN_categories.h */; };
+		E724660AD63FD6C33FAE8E8E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7207CFE60A242E0565F9139C /* CoreLocation.framework */; };
+		F5502F68DBDA3434615E31C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABC729E5F019B3AB3ABD6308 /* Foundation.framework */; };
+		F755C0EAF1E8C96302D8E5FC /* FSNData.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D809415571979437868522 /* FSNData.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-checker -Xanalyzer deadcode"; }; };
+		F80714A2CAFA49925354CDD1 /* FSNetworkingViewHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DF57B89997A8D33D92DEF /* FSNetworkingViewHandler.h */; };
+		FB62E15DE77890B5B98A58CD /* FSNetworkingSearchController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D198937D2B5F2E4A0D10C47 /* FSNetworkingSearchController.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		148F93045F61CC2679458E64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21073EE3BC0AFA3BA643BD6E;
+			remoteInfo = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController";
+		};
+		9BD5A66934D9C833D6420048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6323556441485F2CBEFDA603;
+			remoteInfo = "Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController";
+		};
+		A1A781EDC7C120F5A14A58D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 290673DCEDE955B4EB0F707F;
+			remoteInfo = "Pods-Tests-FSNetworkingSearchController";
+		};
+		A461984F6C1EA9DDE85696D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77AAE88195FD1FF03BCCF451;
+			remoteInfo = "Pods-Tests-FSNetworking";
+		};
+		DE0F2E73237DD39A88F2A9E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD1089CC2FA4CEBEEE3869A;
+			remoteInfo = "Pods-FSNetworkingSearchController-FSNetworking";
+		};
+		EB6BD0D9EBAFC8AAB09266D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFD1089CC2FA4CEBEEE3869A;
+			remoteInfo = "Pods-FSNetworkingSearchController-FSNetworking";
+		};
+		F0813CD3601505D1546A2880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77AAE88195FD1FF03BCCF451;
+			remoteInfo = "Pods-Tests-FSNetworking";
+		};
+		FEFB2609370B14F237C6B48B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00C57F0C03D96856A6FF6306 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEBD04A40C61C56676FA5BE7;
+			remoteInfo = "Pods-FSNetworkingSearchController-FSNetworkingSearchController";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F733F51ACE777B10B27057 /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		07D809415571979437868522 /* FSNData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSNData.m; path = src/FSNData.m; sourceTree = "<group>"; };
+		0F9F169BB9A5B78A1343A59D /* Pods-Tests-FSNetworkingSearchController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-FSNetworkingSearchController.xcconfig"; path = "../Pods-Tests-FSNetworkingSearchController/Pods-Tests-FSNetworkingSearchController.xcconfig"; sourceTree = "<group>"; };
+		101D680BE00ABC4908B44997 /* Pods-FSNetworkingSearchController-FSNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSNetworkingSearchController-FSNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		1029C32AF103D4B8EB0776A3 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		1154CB067CA99A7C46D0E3CE /* Pods-Tests-FSNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-FSNetworking-prefix.pch"; path = "../Pods-Tests-FSNetworking/Pods-Tests-FSNetworking-prefix.pch"; sourceTree = "<group>"; };
+		116BD5AE5E7F5C8F508A7B0D /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		19489471069AE2A0761995FE /* FSNetworkingSearchController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSNetworkingSearchController.m; sourceTree = "<group>"; };
+		1A52B7F15D6F93C78CEC3608 /* FSNConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSNConnection.h; path = src/FSNConnection.h; sourceTree = "<group>"; };
+		29DFBEE4D214603570038062 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D254C4C8E23B81D6CD5BE6C /* FSNConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSNConnection.m; path = src/FSNConnection.m; sourceTree = "<group>"; };
+		31FE2E75AED94574C8C127A6 /* Pods-FSNetworkingSearchController-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FSNetworkingSearchController-environment.h"; sourceTree = "<group>"; };
+		32B9B97B8CA170B64611493D /* FSNData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSNData.h; path = src/FSNData.h; sourceTree = "<group>"; };
+		343A2F85C3C3289DFB38C622 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-dummy.m"; sourceTree = "<group>"; };
+		64757E0C3C3640203AFAD195 /* Pods-Tests-FSNetworking-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-FSNetworking-Private.xcconfig"; path = "../Pods-Tests-FSNetworking/Pods-Tests-FSNetworking-Private.xcconfig"; sourceTree = "<group>"; };
+		67D089C7E4A1C25DB19FC3EC /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69309DB77BF107971BC1ABA3 /* Pods-Tests-FSNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-FSNetworking-dummy.m"; path = "../Pods-Tests-FSNetworking/Pods-Tests-FSNetworking-dummy.m"; sourceTree = "<group>"; };
+		6A9612A900BA3B3C93B20C5D /* Pods-FSNetworkingSearchController-FSNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSNetworkingSearchController-FSNetworking-dummy.m"; sourceTree = "<group>"; };
+		7207CFE60A242E0565F9139C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		72E6908560DE07CF4A099F8B /* Pods-Tests-FSNetworkingSearchController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-FSNetworkingSearchController-Private.xcconfig"; path = "../Pods-Tests-FSNetworkingSearchController/Pods-Tests-FSNetworkingSearchController-Private.xcconfig"; sourceTree = "<group>"; };
+		79126F9CA17A5436319543F1 /* Pods-FSNetworkingSearchController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSNetworkingSearchController.release.xcconfig"; sourceTree = "<group>"; };
+		7E06910B9D1F20D58EB71088 /* Pods-FSNetworkingSearchController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FSNetworkingSearchController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		81D020322CABEFD013684F4F /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-Private.xcconfig"; sourceTree = "<group>"; };
+		82F722663944B1A215A5B8DC /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8CAFF1D50AA2354FC761347F /* FSN_categories.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSN_categories.m; path = src/FSN_categories.m; sourceTree = "<group>"; };
+		8DA443288DC87DA587575FC9 /* FSNetworkingSearchController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSNetworkingSearchController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F3432B550C0200EC1665AAE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		917C4482FC64D1A9E90769EC /* Pods-FSNetworkingSearchController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FSNetworkingSearchController-resources.sh"; sourceTree = "<group>"; };
+		992861A5F03348F7EFBFA4BD /* libPods-FSNetworkingSearchController-FSNetworkingSearchController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSNetworkingSearchController-FSNetworkingSearchController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D198937D2B5F2E4A0D10C47 /* FSNetworkingSearchController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSNetworkingSearchController.h; sourceTree = "<group>"; };
+		9D87F2246B60E84609142C37 /* Pods-FSNetworkingSearchController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FSNetworkingSearchController-dummy.m"; sourceTree = "<group>"; };
+		A7D65A055AFF1B58ED65E8B7 /* Pods-FSNetworkingSearchController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSNetworkingSearchController.debug.xcconfig"; sourceTree = "<group>"; };
+		ABC729E5F019B3AB3ABD6308 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B8C0BBFB270ED04BBBC00ED2 /* Pods-FSNetworkingSearchController-FSNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FSNetworkingSearchController-FSNetworking-prefix.pch"; sourceTree = "<group>"; };
+		B9882C33E8448279EC277A59 /* FSNetworkingViewHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSNetworkingViewHandler.m; sourceTree = "<group>"; };
+		BCE68FD3D6A85C68C15E13F0 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-prefix.pch"; sourceTree = "<group>"; };
+		BF2DF57B89997A8D33D92DEF /* FSNetworkingViewHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSNetworkingViewHandler.h; sourceTree = "<group>"; };
+		CA17BA69C15642FFC4B38145 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSNetworkingSearchController-FSNetworkingSearchController.xcconfig"; sourceTree = "<group>"; };
+		CB0563BB241C9C54B89671D8 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D54B9FBBF5317CA9B9612DF2 /* Pods-FSNetworkingSearchController-FSNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FSNetworkingSearchController-FSNetworking.xcconfig"; sourceTree = "<group>"; };
+		D6E149C0ABB48BCE32159B55 /* libPods-Tests-FSNetworkingSearchController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-FSNetworkingSearchController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6FFFB1319FC85A8955FB8EE /* Pods-Tests-FSNetworkingSearchController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-FSNetworkingSearchController-prefix.pch"; path = "../Pods-Tests-FSNetworkingSearchController/Pods-Tests-FSNetworkingSearchController-prefix.pch"; sourceTree = "<group>"; };
+		D72E68C9A5C08040C27B6C6F /* FSNetworkingCommunicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FSNetworkingCommunicator.h; sourceTree = "<group>"; };
+		DC2A863BBB6EEF879965236F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DCFB538C71C931113406B273 /* Pods-Tests-FSNetworkingSearchController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-FSNetworkingSearchController-dummy.m"; path = "../Pods-Tests-FSNetworkingSearchController/Pods-Tests-FSNetworkingSearchController-dummy.m"; sourceTree = "<group>"; };
+		E326DA1CC69A4578C080788F /* libPods-FSNetworkingSearchController-FSNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSNetworkingSearchController-FSNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40B8FFA7416ED1585447C1E /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		E4A1E9083F08BCA006FE2A68 /* Pods-Tests-FSNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-FSNetworking.xcconfig"; path = "../Pods-Tests-FSNetworking/Pods-Tests-FSNetworking.xcconfig"; sourceTree = "<group>"; };
+		E6DFD9D1B94D14829B9EA88C /* FSNetworkingCommunicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FSNetworkingCommunicator.m; sourceTree = "<group>"; };
+		E6E6D71AAF42E9974F307F64 /* libPods-FSNetworkingSearchController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSNetworkingSearchController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA13E268BBD8F563FED4921E /* FSN_categories.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSN_categories.h; path = src/FSN_categories.h; sourceTree = "<group>"; };
+		FA273615D37383797807BA9B /* FSNetworkingSearchController.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSNetworkingSearchController.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0AED35CA4881B87FC5EB0E /* Pods-FSNetworkingSearchController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FSNetworkingSearchController-acknowledgements.plist"; sourceTree = "<group>"; };
+		FF38112C4C89BD7B54D5A59F /* libPods-Tests-FSNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-FSNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		251169F0309AFD4AC95F6789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E84C7E621ADA33D547146A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38F5D296A647CF824C92AB88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54349FF97419182BC9D0C598 /* CoreLocation.framework in Frameworks */,
+				F5502F68DBDA3434615E31C7 /* Foundation.framework in Frameworks */,
+				443D3BE710B5CEF2E369E5F3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83DB6853D3958E600B39BC26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96365874A944B4A70BD73A07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAD8F3903866C253B7DE6CB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E724660AD63FD6C33FAE8E8E /* CoreLocation.framework in Frameworks */,
+				90F015187983794B086038BC /* Foundation.framework in Frameworks */,
+				4F3CE12482E4BCC6AE455EA7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA799939D45DAB61E0698C03 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C509EFB73AF7D9DB69B762 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EECBD57A7BF5671DD4D27413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6FFA48F27BA425E068299B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1CA916C97D40936C548F2E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8335E375D4078EE735D4F1D6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A12748D5D9704BE1918F79A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFE839867858F923BDDD118C /* FSNetworkingSearchController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		0A93FE51AED76835DDA3F986 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA273615D37383797807BA9B /* FSNetworkingSearchController.bundle */,
+				8DA443288DC87DA587575FC9 /* FSNetworkingSearchController.bundle */,
+				E6E6D71AAF42E9974F307F64 /* libPods-FSNetworkingSearchController.a */,
+				E326DA1CC69A4578C080788F /* libPods-FSNetworkingSearchController-FSNetworking.a */,
+				992861A5F03348F7EFBFA4BD /* libPods-FSNetworkingSearchController-FSNetworkingSearchController.a */,
+				67D089C7E4A1C25DB19FC3EC /* libPods-Tests.a */,
+				FF38112C4C89BD7B54D5A59F /* libPods-Tests-FSNetworking.a */,
+				D6E149C0ABB48BCE32159B55 /* libPods-Tests-FSNetworkingSearchController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18159CBCA7C84C5B06A2F23A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA17BA69C15642FFC4B38145 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController.xcconfig */,
+				81D020322CABEFD013684F4F /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-Private.xcconfig */,
+				343A2F85C3C3289DFB38C622 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-dummy.m */,
+				BCE68FD3D6A85C68C15E13F0 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-prefix.pch */,
+				0F9F169BB9A5B78A1343A59D /* Pods-Tests-FSNetworkingSearchController.xcconfig */,
+				72E6908560DE07CF4A099F8B /* Pods-Tests-FSNetworkingSearchController-Private.xcconfig */,
+				DCFB538C71C931113406B273 /* Pods-Tests-FSNetworkingSearchController-dummy.m */,
+				D6FFFB1319FC85A8955FB8EE /* Pods-Tests-FSNetworkingSearchController-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-FSNetworkingSearchController-FSNetworkingSearchController";
+			sourceTree = "<group>";
+		};
+		23CF53E3BEF7104B56B69FC8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				7207CFE60A242E0565F9139C /* CoreLocation.framework */,
+				ABC729E5F019B3AB3ABD6308 /* Foundation.framework */,
+				8F3432B550C0200EC1665AAE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		466BEEE3FEAE94B0FFEF8570 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9B3217246E4BAE6E01BEA8AA /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		5A8F2F84737B5903EBCF6CFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C276CE60BF31F7658C94189 /* FSNetworking */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		61E43FBF778880359160B58D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCAA235670C5DF0400128CC7 /* Pods-FSNetworkingSearchController */,
+				ED0AD07CD392CB7ED61EF886 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6E1C38E8B1A736D884ADD052 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D54B9FBBF5317CA9B9612DF2 /* Pods-FSNetworkingSearchController-FSNetworking.xcconfig */,
+				101D680BE00ABC4908B44997 /* Pods-FSNetworkingSearchController-FSNetworking-Private.xcconfig */,
+				6A9612A900BA3B3C93B20C5D /* Pods-FSNetworkingSearchController-FSNetworking-dummy.m */,
+				B8C0BBFB270ED04BBBC00ED2 /* Pods-FSNetworkingSearchController-FSNetworking-prefix.pch */,
+				E4A1E9083F08BCA006FE2A68 /* Pods-Tests-FSNetworking.xcconfig */,
+				64757E0C3C3640203AFAD195 /* Pods-Tests-FSNetworking-Private.xcconfig */,
+				69309DB77BF107971BC1ABA3 /* Pods-Tests-FSNetworking-dummy.m */,
+				1154CB067CA99A7C46D0E3CE /* Pods-Tests-FSNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-FSNetworkingSearchController-FSNetworking";
+			sourceTree = "<group>";
+		};
+		9795608944958158238CE52E = {
+			isa = PBXGroup;
+			children = (
+				DC2A863BBB6EEF879965236F /* Podfile */,
+				0A12748D5D9704BE1918F79A /* Development Pods */,
+				AE5619C6D97B5C5A494D818D /* Frameworks */,
+				5A8F2F84737B5903EBCF6CFE /* Pods */,
+				0A93FE51AED76835DDA3F986 /* Products */,
+				61E43FBF778880359160B58D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B3217246E4BAE6E01BEA8AA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D72E68C9A5C08040C27B6C6F /* FSNetworkingCommunicator.h */,
+				E6DFD9D1B94D14829B9EA88C /* FSNetworkingCommunicator.m */,
+				9D198937D2B5F2E4A0D10C47 /* FSNetworkingSearchController.h */,
+				19489471069AE2A0761995FE /* FSNetworkingSearchController.m */,
+				BF2DF57B89997A8D33D92DEF /* FSNetworkingViewHandler.h */,
+				B9882C33E8448279EC277A59 /* FSNetworkingViewHandler.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9C276CE60BF31F7658C94189 /* FSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1A52B7F15D6F93C78CEC3608 /* FSNConnection.h */,
+				2D254C4C8E23B81D6CD5BE6C /* FSNConnection.m */,
+				32B9B97B8CA170B64611493D /* FSNData.h */,
+				07D809415571979437868522 /* FSNData.m */,
+				FA13E268BBD8F563FED4921E /* FSN_categories.h */,
+				8CAFF1D50AA2354FC761347F /* FSN_categories.m */,
+				6E1C38E8B1A736D884ADD052 /* Support Files */,
+			);
+			path = FSNetworking;
+			sourceTree = "<group>";
+		};
+		AE5619C6D97B5C5A494D818D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23CF53E3BEF7104B56B69FC8 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCAA235670C5DF0400128CC7 /* Pods-FSNetworkingSearchController */ = {
+			isa = PBXGroup;
+			children = (
+				7E06910B9D1F20D58EB71088 /* Pods-FSNetworkingSearchController-acknowledgements.markdown */,
+				FE0AED35CA4881B87FC5EB0E /* Pods-FSNetworkingSearchController-acknowledgements.plist */,
+				9D87F2246B60E84609142C37 /* Pods-FSNetworkingSearchController-dummy.m */,
+				31FE2E75AED94574C8C127A6 /* Pods-FSNetworkingSearchController-environment.h */,
+				917C4482FC64D1A9E90769EC /* Pods-FSNetworkingSearchController-resources.sh */,
+				A7D65A055AFF1B58ED65E8B7 /* Pods-FSNetworkingSearchController.debug.xcconfig */,
+				79126F9CA17A5436319543F1 /* Pods-FSNetworkingSearchController.release.xcconfig */,
+			);
+			name = "Pods-FSNetworkingSearchController";
+			path = "Target Support Files/Pods-FSNetworkingSearchController";
+			sourceTree = "<group>";
+		};
+		ED0AD07CD392CB7ED61EF886 /* Pods-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CB0563BB241C9C54B89671D8 /* Pods-Tests-acknowledgements.markdown */,
+				82F722663944B1A215A5B8DC /* Pods-Tests-acknowledgements.plist */,
+				E40B8FFA7416ED1585447C1E /* Pods-Tests-dummy.m */,
+				00F733F51ACE777B10B27057 /* Pods-Tests-environment.h */,
+				1029C32AF103D4B8EB0776A3 /* Pods-Tests-resources.sh */,
+				29DFBEE4D214603570038062 /* Pods-Tests.debug.xcconfig */,
+				116BD5AE5E7F5C8F508A7B0D /* Pods-Tests.release.xcconfig */,
+			);
+			name = "Pods-Tests";
+			path = "Target Support Files/Pods-Tests";
+			sourceTree = "<group>";
+		};
+		EFE839867858F923BDDD118C /* FSNetworkingSearchController */ = {
+			isa = PBXGroup;
+			children = (
+				466BEEE3FEAE94B0FFEF8570 /* Pod */,
+				18159CBCA7C84C5B06A2F23A /* Support Files */,
+			);
+			name = FSNetworkingSearchController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3FC36D64A6FEA405EB56B4C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A3E43812302733485BDB5B9 /* FSNConnection.h in Headers */,
+				7734E83FFA2243C15FD3BE3E /* FSNData.h in Headers */,
+				00B5600661F32547D1FB7446 /* FSN_categories.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55C3B3AE8D74180AAEDFD6DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7BE08D4CEAF400A7DD97F3 /* FSNetworkingCommunicator.h in Headers */,
+				FB62E15DE77890B5B98A58CD /* FSNetworkingSearchController.h in Headers */,
+				299DA7B1296D6F93EA603394 /* FSNetworkingViewHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E18AF5D161C4CC7CDB6C5DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC452CEB0312DD07CC2D9105 /* FSNConnection.h in Headers */,
+				7FD4BD900944792CB1BC73A7 /* FSNData.h in Headers */,
+				DB03ADE1EF10ED261E6C38A1 /* FSN_categories.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		734F0A10D595CB8A79FAA16F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ECDEAC4E093C32B7A96A2D7 /* FSNetworkingCommunicator.h in Headers */,
+				D9BED5FF9A77D0557A34CED1 /* FSNetworkingSearchController.h in Headers */,
+				F80714A2CAFA49925354CDD1 /* FSNetworkingViewHandler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21073EE3BC0AFA3BA643BD6E /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E8872789FEF67B894129BB9 /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController" */;
+			buildPhases = (
+				D18EA6D9C3F5BFDF29BBCEF3 /* Sources */,
+				96365874A944B4A70BD73A07 /* Frameworks */,
+				0F613BBEC8DD05533472BAD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController";
+			productName = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController";
+			productReference = 8DA443288DC87DA587575FC9 /* FSNetworkingSearchController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		290673DCEDE955B4EB0F707F /* Pods-Tests-FSNetworkingSearchController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82BAE80ED106C06551F17C77 /* Build configuration list for PBXNativeTarget "Pods-Tests-FSNetworkingSearchController" */;
+			buildPhases = (
+				288940D9895EE8F35D9F3156 /* Sources */,
+				38F5D296A647CF824C92AB88 /* Frameworks */,
+				734F0A10D595CB8A79FAA16F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C75569AB3C8FA75967DF4FC1 /* PBXTargetDependency */,
+				23C94085AD57B3FFA283A55C /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests-FSNetworkingSearchController";
+			productName = "Pods-Tests-FSNetworkingSearchController";
+			productReference = D6E149C0ABB48BCE32159B55 /* libPods-Tests-FSNetworkingSearchController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		309DD51FB6B047F337F7F526 /* Pods-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6289EBDEB1685BD951222DF /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
+			buildPhases = (
+				A94986072F63A9D920615CE7 /* Sources */,
+				EECBD57A7BF5671DD4D27413 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				588FCC391A0FFDAAC5A72EF4 /* PBXTargetDependency */,
+				306BCA79225EE61D7393D644 /* PBXTargetDependency */,
+			);
+			name = "Pods-Tests";
+			productName = "Pods-Tests";
+			productReference = 67D089C7E4A1C25DB19FC3EC /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6323556441485F2CBEFDA603 /* Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9768EBA5374B38160475DC30 /* Build configuration list for PBXNativeTarget "Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController" */;
+			buildPhases = (
+				3CBB027C18FECB70106DDD8A /* Sources */,
+				83DB6853D3958E600B39BC26 /* Frameworks */,
+				E05DADF4F0262FBE293CE9BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController";
+			productName = "Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController";
+			productReference = FA273615D37383797807BA9B /* FSNetworkingSearchController.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		77AAE88195FD1FF03BCCF451 /* Pods-Tests-FSNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD8A6B89CAA43C4FC0E8408F /* Build configuration list for PBXNativeTarget "Pods-Tests-FSNetworking" */;
+			buildPhases = (
+				D7915D72BF19CDAC1DA56A94 /* Sources */,
+				CA799939D45DAB61E0698C03 /* Frameworks */,
+				5E18AF5D161C4CC7CDB6C5DA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Tests-FSNetworking";
+			productName = "Pods-Tests-FSNetworking";
+			productReference = FF38112C4C89BD7B54D5A59F /* libPods-Tests-FSNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7999AC67EB31F4CC8413B999 /* Pods-FSNetworkingSearchController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEC3D9F77C2E2E8EA598AF0C /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController" */;
+			buildPhases = (
+				B9A47B8758C95E473CDC5E16 /* Sources */,
+				F1CA916C97D40936C548F2E1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB93F34E43C67A408E359845 /* PBXTargetDependency */,
+				DFE8A288E5AA4C5EF25A23CC /* PBXTargetDependency */,
+			);
+			name = "Pods-FSNetworkingSearchController";
+			productName = "Pods-FSNetworkingSearchController";
+			productReference = E6E6D71AAF42E9974F307F64 /* libPods-FSNetworkingSearchController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BEBD04A40C61C56676FA5BE7 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41E9CB480D06E87AC6FE6778 /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController-FSNetworkingSearchController" */;
+			buildPhases = (
+				EF0A202DD2629713E03BD9CE /* Sources */,
+				BAD8F3903866C253B7DE6CB6 /* Frameworks */,
+				55C3B3AE8D74180AAEDFD6DD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA47BADFB9653BF3B3B85F6B /* PBXTargetDependency */,
+				AA4CAA5689AB5FD6889CC793 /* PBXTargetDependency */,
+			);
+			name = "Pods-FSNetworkingSearchController-FSNetworkingSearchController";
+			productName = "Pods-FSNetworkingSearchController-FSNetworkingSearchController";
+			productReference = 992861A5F03348F7EFBFA4BD /* libPods-FSNetworkingSearchController-FSNetworkingSearchController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FFD1089CC2FA4CEBEEE3869A /* Pods-FSNetworkingSearchController-FSNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C1AD513E89B72C474AD792A /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController-FSNetworking" */;
+			buildPhases = (
+				91E6D704C404BAB86DBEA4FB /* Sources */,
+				251169F0309AFD4AC95F6789 /* Frameworks */,
+				3FC36D64A6FEA405EB56B4C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FSNetworkingSearchController-FSNetworking";
+			productName = "Pods-FSNetworkingSearchController-FSNetworking";
+			productReference = E326DA1CC69A4578C080788F /* libPods-FSNetworkingSearchController-FSNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00C57F0C03D96856A6FF6306 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 0E595E5DFB65D0154E6833D2 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9795608944958158238CE52E;
+			productRefGroup = 0A93FE51AED76835DDA3F986 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7999AC67EB31F4CC8413B999 /* Pods-FSNetworkingSearchController */,
+				FFD1089CC2FA4CEBEEE3869A /* Pods-FSNetworkingSearchController-FSNetworking */,
+				BEBD04A40C61C56676FA5BE7 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController */,
+				21073EE3BC0AFA3BA643BD6E /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController */,
+				309DD51FB6B047F337F7F526 /* Pods-Tests */,
+				77AAE88195FD1FF03BCCF451 /* Pods-Tests-FSNetworking */,
+				290673DCEDE955B4EB0F707F /* Pods-Tests-FSNetworkingSearchController */,
+				6323556441485F2CBEFDA603 /* Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F613BBEC8DD05533472BAD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E05DADF4F0262FBE293CE9BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		288940D9895EE8F35D9F3156 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29194637784D919A873F1BB0 /* FSNetworkingCommunicator.m in Sources */,
+				4F88321953B289AB9DDB5CF0 /* FSNetworkingSearchController.m in Sources */,
+				846833E07172508F98A599ED /* FSNetworkingViewHandler.m in Sources */,
+				5CE92611AD173AD8CB2BA1E4 /* Pods-Tests-FSNetworkingSearchController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBB027C18FECB70106DDD8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E6D704C404BAB86DBEA4FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C354A905006E8BCF15E039A8 /* FSNConnection.m in Sources */,
+				F755C0EAF1E8C96302D8E5FC /* FSNData.m in Sources */,
+				33062D1068D3AE54C1D0154D /* FSN_categories.m in Sources */,
+				B6652AF49C905D731E950E36 /* Pods-FSNetworkingSearchController-FSNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94986072F63A9D920615CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96115A6979FD49D9901D73A6 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A47B8758C95E473CDC5E16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CECFFF42E03DB1AC0FBE3A3A /* Pods-FSNetworkingSearchController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D18EA6D9C3F5BFDF29BBCEF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7915D72BF19CDAC1DA56A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907AD5C80199061AB29A4CC0 /* FSNConnection.m in Sources */,
+				3B8CAE4350CA7421B30DBAA8 /* FSNData.m in Sources */,
+				914C0C3AA35916B114716119 /* FSN_categories.m in Sources */,
+				2B26DD485882BDF51B553B54 /* Pods-Tests-FSNetworking-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF0A202DD2629713E03BD9CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3060C85A6B50FD952E8000 /* FSNetworkingCommunicator.m in Sources */,
+				3DF2229336C3B2437EE5AEB5 /* FSNetworkingSearchController.m in Sources */,
+				5A41B87EC7A6BDEC5F81FBDE /* FSNetworkingViewHandler.m in Sources */,
+				3EC1A896F369D48B6E46351B /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23C94085AD57B3FFA283A55C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController";
+			target = 6323556441485F2CBEFDA603 /* Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController */;
+			targetProxy = 9BD5A66934D9C833D6420048 /* PBXContainerItemProxy */;
+		};
+		306BCA79225EE61D7393D644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-FSNetworkingSearchController";
+			target = 290673DCEDE955B4EB0F707F /* Pods-Tests-FSNetworkingSearchController */;
+			targetProxy = A1A781EDC7C120F5A14A58D1 /* PBXContainerItemProxy */;
+		};
+		588FCC391A0FFDAAC5A72EF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-FSNetworking";
+			target = 77AAE88195FD1FF03BCCF451 /* Pods-Tests-FSNetworking */;
+			targetProxy = F0813CD3601505D1546A2880 /* PBXContainerItemProxy */;
+		};
+		AA47BADFB9653BF3B3B85F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FSNetworkingSearchController-FSNetworking";
+			target = FFD1089CC2FA4CEBEEE3869A /* Pods-FSNetworkingSearchController-FSNetworking */;
+			targetProxy = DE0F2E73237DD39A88F2A9E3 /* PBXContainerItemProxy */;
+		};
+		AA4CAA5689AB5FD6889CC793 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController";
+			target = 21073EE3BC0AFA3BA643BD6E /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController */;
+			targetProxy = 148F93045F61CC2679458E64 /* PBXContainerItemProxy */;
+		};
+		BB93F34E43C67A408E359845 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FSNetworkingSearchController-FSNetworking";
+			target = FFD1089CC2FA4CEBEEE3869A /* Pods-FSNetworkingSearchController-FSNetworking */;
+			targetProxy = EB6BD0D9EBAFC8AAB09266D9 /* PBXContainerItemProxy */;
+		};
+		C75569AB3C8FA75967DF4FC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-FSNetworking";
+			target = 77AAE88195FD1FF03BCCF451 /* Pods-Tests-FSNetworking */;
+			targetProxy = A461984F6C1EA9DDE85696D1 /* PBXContainerItemProxy */;
+		};
+		DFE8A288E5AA4C5EF25A23CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FSNetworkingSearchController-FSNetworkingSearchController";
+			target = BEBD04A40C61C56676FA5BE7 /* Pods-FSNetworkingSearchController-FSNetworkingSearchController */;
+			targetProxy = FEFB2609370B14F237C6B48B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25864D5C03D1439836EDE1BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79126F9CA17A5436319543F1 /* Pods-FSNetworkingSearchController.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4E3E4AF5DDA1314AF5792C40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101D680BE00ABC4908B44997 /* Pods-FSNetworkingSearchController-FSNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FSNetworkingSearchController-FSNetworking/Pods-FSNetworkingSearchController-FSNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5C770934E242DAD86B4D05C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E6908560DE07CF4A099F8B /* Pods-Tests-FSNetworkingSearchController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-FSNetworkingSearchController/Pods-Tests-FSNetworkingSearchController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		720DDD7E78FF49E6BF96E154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		767900ECF0F1B68CF7AE0E5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FSNetworkingSearchController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		787C3F0F7D4E00A1545B5C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64757E0C3C3640203AFAD195 /* Pods-Tests-FSNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-FSNetworking/Pods-Tests-FSNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A3651B6C999C45130A55E346 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FSNetworkingSearchController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AF13264AD44DF3B5E5A91821 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E6908560DE07CF4A099F8B /* Pods-Tests-FSNetworkingSearchController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-FSNetworkingSearchController/Pods-Tests-FSNetworkingSearchController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BF6592A66A932272C6BF5F5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116BD5AE5E7F5C8F508A7B0D /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C0240664133A791ACC22FB83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FSNetworkingSearchController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C550AAF19205A1B25DEB62F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D65A055AFF1B58ED65E8B7 /* Pods-FSNetworkingSearchController.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA3CA0FA5ACE0AB8912BCFCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D020322CABEFD013684F4F /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FSNetworkingSearchController-FSNetworkingSearchController/Pods-FSNetworkingSearchController-FSNetworkingSearchController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CDB41F1AC8AC12C29C9E7457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64757E0C3C3640203AFAD195 /* Pods-Tests-FSNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-FSNetworking/Pods-Tests-FSNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D7AE5BF6EABA70D5BEAEDA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = FSNetworkingSearchController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DFF640BDE5E67792EDE718B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29DFBEE4D214603570038062 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E3ADB8F54CA9E72E96D28AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D020322CABEFD013684F4F /* Pods-FSNetworkingSearchController-FSNetworkingSearchController-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FSNetworkingSearchController-FSNetworkingSearchController/Pods-FSNetworkingSearchController-FSNetworkingSearchController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E6179EE2B6042EFAC1065AF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1324A68ED36AC51B6649F3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 101D680BE00ABC4908B44997 /* Pods-FSNetworkingSearchController-FSNetworking-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-FSNetworkingSearchController-FSNetworking/Pods-FSNetworkingSearchController-FSNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E595E5DFB65D0154E6833D2 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				720DDD7E78FF49E6BF96E154 /* Debug */,
+				E6179EE2B6042EFAC1065AF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E8872789FEF67B894129BB9 /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController-FSNetworkingSearchController-FSNetworkingSearchController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3651B6C999C45130A55E346 /* Debug */,
+				D7AE5BF6EABA70D5BEAEDA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41E9CB480D06E87AC6FE6778 /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController-FSNetworkingSearchController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3CA0FA5ACE0AB8912BCFCB /* Debug */,
+				E3ADB8F54CA9E72E96D28AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C1AD513E89B72C474AD792A /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController-FSNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E3E4AF5DDA1314AF5792C40 /* Debug */,
+				F1324A68ED36AC51B6649F3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82BAE80ED106C06551F17C77 /* Build configuration list for PBXNativeTarget "Pods-Tests-FSNetworkingSearchController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C770934E242DAD86B4D05C7 /* Debug */,
+				AF13264AD44DF3B5E5A91821 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9768EBA5374B38160475DC30 /* Build configuration list for PBXNativeTarget "Pods-Tests-FSNetworkingSearchController-FSNetworkingSearchController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0240664133A791ACC22FB83 /* Debug */,
+				767900ECF0F1B68CF7AE0E5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD8A6B89CAA43C4FC0E8408F /* Build configuration list for PBXNativeTarget "Pods-Tests-FSNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDB41F1AC8AC12C29C9E7457 /* Debug */,
+				787C3F0F7D4E00A1545B5C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEC3D9F77C2E2E8EA598AF0C /* Build configuration list for PBXNativeTarget "Pods-FSNetworkingSearchController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C550AAF19205A1B25DEB62F4 /* Debug */,
+				25864D5C03D1439836EDE1BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6289EBDEB1685BD951222DF /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFF640BDE5E67792EDE718B0 /* Debug */,
+				BF6592A66A932272C6BF5F5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00C57F0C03D96856A6FF6306 /* Project object */;
+}

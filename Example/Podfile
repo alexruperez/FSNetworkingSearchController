@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+inhibit_all_warnings!
+
+target 'FSNetworkingSearchController', :exclusive => true do
+  pod "FSNetworkingSearchController", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "FSNetworkingSearchController", :path => "../"
+
+  
+end
