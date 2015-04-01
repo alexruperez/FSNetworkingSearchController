@@ -22,9 +22,19 @@ typedef void(^FSNSCVenueBlock)(NSDictionary *venue, UIImage *categoryImage);
 
 @property (copy, nonatomic) FSNSCVenueBlock selectHandler;
 
-@property (assign, nonatomic) BOOL shouldHideRefreshControl;
+@property (assign, nonatomic) IBInspectable CGFloat cellHeight;
 
-@property (assign, nonatomic) CGFloat cellHeight;
+@property (assign, nonatomic) IBInspectable BOOL refreshControl;
+
+@property (assign, nonatomic) IBInspectable BOOL categoryImage;
+
+@property (assign, nonatomic) IBInspectable BOOL addressDetail;
+
+@property (assign, nonatomic) IBInspectable BOOL distanceDetail;
+
+@property (strong, nonatomic) IBInspectable UIColor *textLabelColor;
+
+@property (strong, nonatomic) IBInspectable UIColor *detailLabelColor;
 
 @property (assign, nonatomic) UIViewContentMode imageContentMode;
 

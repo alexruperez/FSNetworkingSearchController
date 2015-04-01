@@ -10,9 +10,6 @@
 #import "FSNetworkingSearchController.h"
 
 
-CGFloat const FSNVHDefaultCellHeight = 60.0f;
-FSNetworkingImageSize const FSNVHDefaultImageSize = FSNetworkingImageSize88;
-UIViewContentMode const FSNVHDefaultImageContentMode = UIViewContentModeCenter;
 NSURLRequestCachePolicy const FSNVHDefaultCachePolicy = NSURLRequestReturnCacheDataElseLoad;
 NSTimeInterval const FSNVHDefaultTimeout = 30.0f;
 CGFloat const FSNVHDefaultMinimumScaleFactor = 0.5f;
@@ -33,6 +30,26 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 
 @implementation FSNetworkingViewHandler
 
+- (instancetype)init
+{
+    self = super.init;
+    
+    if (self)
+    {
+        self.cellHeight = 60.0f;
+        self.refreshControl = YES;
+        self.categoryImage = YES;
+        self.addressDetail = YES;
+        self.distanceDetail = YES;
+        self.textLabelColor = UIColor.blackColor;
+        self.detailLabelColor = UIColor.lightGrayColor;
+        self.imageContentMode = UIViewContentModeScaleAspectFit;
+        self.imageSize = FSNetworkingImageSize44;
+    }
+    
+    return self;
+}
+
 - (NSMutableArray *)venues
 {
     if (!_venues)
@@ -51,36 +68,6 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     }
     
     return _cachedImages;
-}
-
-- (CGFloat)cellHeight
-{
-    if (_cellHeight == 0.0f)
-    {
-        _cellHeight = FSNVHDefaultCellHeight;
-    }
-    
-    return _cellHeight;
-}
-
-- (UIViewContentMode)imageContentMode
-{
-    if (!_imageContentMode)
-    {
-        _imageContentMode = FSNVHDefaultImageContentMode;
-    }
-    
-    return _imageContentMode;
-}
-
-- (FSNetworkingImageSize)imageSize
-{
-    if (!_imageSize)
-    {
-        _imageSize = FSNVHDefaultImageSize;
-    }
-    
-    return _imageSize;
 }
 
 #pragma mark - Public Methods
@@ -136,7 +123,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     if (!self.searchDisplayController)
     {
         _searchDisplayController = controller;
-        if (!self.shouldHideRefreshControl)
+        if (self.refreshControl)
         {
             UIRefreshControl *refreshControl = UIRefreshControl.new;
             refreshControl.tintColor = controller.searchResultsTableView.tintColor;
@@ -185,16 +172,17 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     
     cell.textLabel.text = self.venues[indexPath.row][@"name"];
     cell.textLabel.minimumScaleFactor = FSNVHDefaultMinimumScaleFactor;
+    cell.textLabel.textColor = self.textLabelColor;
     
     NSDictionary *location = self.venues[indexPath.row][@"location"];
     NSMutableString *detail = NSMutableString.new;
     NSString *address = location[@"address"];
-    if (address)
+    if (address && self.addressDetail)
     {
         [detail appendString:address];
         [detail appendString:address.length <= 30 ? @"\n" : @"  "];
     }
-    if (location[@"distance"])
+    if (location[@"distance"] && self.distanceDetail)
     {
         [detail appendFormat:@"%d", [location[@"distance"] intValue]];
         [detail appendString:NSLocalizedString(@" m", @"Meter unit symbol")];
@@ -202,14 +190,19 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     cell.detailTextLabel.text = detail.copy;
     cell.detailTextLabel.numberOfLines = 0;
     cell.detailTextLabel.minimumScaleFactor = FSNVHDefaultMinimumScaleFactor;
+    cell.detailTextLabel.textColor = self.detailLabelColor;
     
+    [cell.imageView.subviews.firstObject removeFromSuperview];
     cell.imageView.image = nil;
     
-    NSDictionary *primary = [self primaryCategory:self.venues[indexPath.row]];
-    
-    if (primary)
+    if (self.categoryImage)
     {
-        [self tableView:tableView setImageForCell:cell withCategory:primary];
+        NSDictionary *primary = [self primaryCategory:self.venues[indexPath.row]];
+        
+        if (primary)
+        {
+            [self tableView:tableView setImageForCell:cell withCategory:primary];
+        }
     }
     
     return cell;
@@ -267,10 +260,25 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
         
         if (url)
         {
+            UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+            activityIndicatorView.color = tableView.tintColor;
+            
+            UIGraphicsBeginImageContext(activityIndicatorView.frame.size);
+            
+            [UIImage.new drawInRect:CGRectMake(0.0f, 0.0f, activityIndicatorView.frame.size.width, activityIndicatorView.frame.size.height)];
+            UIImage *spacer = UIGraphicsGetImageFromCurrentImageContext();
+            
+            UIGraphicsEndImageContext();
+            
+            cell.imageView.image = spacer;
+            [cell.imageView addSubview:activityIndicatorView];
+            [activityIndicatorView startAnimating];
+            
             [self downloadAndCacheImage:identifier fromURL:url completion:^{
                 NSIndexPath *indexPath = [tableView indexPathForCell:cell];
                 if (indexPath)
                 {
+                    [activityIndicatorView removeFromSuperview];
                     cell.imageView.image = image;
                     cell.imageView.contentMode = self.imageContentMode;
                     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];

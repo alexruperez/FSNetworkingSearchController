@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FSNetworkingSearchController"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Foursquare search controller with suggest completion like Instagram."
   s.homepage         = "https://github.com/alexruperez/FSNetworkingSearchController"
   s.screenshots     = "https://raw.githubusercontent.com/alexruperez/FSNetworkingSearchController/master/screenshot.gif", "https://raw.githubusercontent.com/alexruperez/FSNetworkingSearchController/master/screenshot.png"

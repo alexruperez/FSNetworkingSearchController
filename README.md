@@ -51,7 +51,7 @@ FSNetworkingSearchController automatically gets the user location if you don't a
 
 #### FSNetworkingViewHandler
 
-Use it as your UISearchDisplayController delegate, UISearchController searchResultsUpdater or your UITableView dataSource and delegate. Your could do it programmatically or using the storyboard like in the example project.
+Use it as your UISearchDisplayController delegate, UISearchController searchResultsUpdater or your UITableView dataSource and delegate. Your could do it programmatically or using the storyboard like in the example project. Have IBInspectable properties.
 
 You could customize it or set the selectHandler to detect selected Foursquare Venue.
 
