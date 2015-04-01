@@ -112,7 +112,7 @@ NSString * const FSNSCAPISuggestCompletionPath = @"suggestcompletion";
 
 + (BOOL)isLoggedIn
 {
-    return self.accessToken;
+    return self.accessToken != nil;
 }
 
 + (NSString *)accessToken
@@ -281,7 +281,7 @@ NSString * const FSNSCAPISuggestCompletionPath = @"suggestcompletion";
     
     if (limit)
     {
-        [urlString appendFormat:@"&%@=%d", NSStringFromSelector(@selector(limit)), limit.intValue];
+        [urlString appendFormat:@"&limit=%d", limit.intValue];
     }
     
     if (location)
@@ -350,12 +350,12 @@ NSString * const FSNSCAPISuggestCompletionPath = @"suggestcompletion";
     
     if (intent)
     {
-        [urlString appendFormat:@"&%@=%@", NSStringFromSelector(@selector(intent)), intent];
+        [urlString appendFormat:@"&intent=%@", intent];
     }
     
     if (limit)
     {
-        [urlString appendFormat:@"&%@=%d", NSStringFromSelector(@selector(limit)), limit.intValue];
+        [urlString appendFormat:@"&limit=%d", limit.intValue];
     }
     
     if (location)

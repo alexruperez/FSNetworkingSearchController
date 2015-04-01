@@ -159,7 +159,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
-    [self filterContentForSearchText:searchController.searchBar.text tableView:searchController.searchResultsController completion:nil];
+    [self filterContentForSearchText:searchController.searchBar.text tableView:searchController.searchResultsController.view completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
@@ -188,10 +188,11 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     
     NSDictionary *location = self.venues[indexPath.row][@"location"];
     NSMutableString *detail = NSMutableString.new;
-    if (location[@"address"])
+    NSString *address = location[@"address"];
+    if (address)
     {
-        [detail appendString:location[@"address"]];
-        [detail appendString:@"\n"];
+        [detail appendString:address];
+        [detail appendString:address.length <= 30 ? @"\n" : @"  "];
     }
     if (location[@"distance"])
     {
@@ -260,7 +261,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     }
     else if (category[@"icon"])
     {
-        NSString *urlString = [NSString stringWithFormat:@"%@%d%@", category[@"icon"][@"prefix"], self.imageSize, category[@"icon"][@"suffix"]];
+        NSString *urlString = [NSString stringWithFormat:@"%@%lu%@", category[@"icon"][@"prefix"], (unsigned long)self.imageSize, category[@"icon"][@"suffix"]];
         
         NSURL *url = [NSURL URLWithString:urlString];
         
