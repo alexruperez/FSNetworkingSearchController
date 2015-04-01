@@ -104,7 +104,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
         _lastSearchText = searchText;
         [FSNetworkingSearchController search:searchText completion:^(NSArray *venues, NSError *error) {
             [self.venues removeAllObjects];
-                
+            
             [self.venues addObjectsFromArray:venues];
             
             if ([tableView respondsToSelector:NSSelectorFromString(@"reloadData")])
@@ -293,12 +293,12 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
         {
             [self.cachedImages setObject:image forKey:identifier];
             
-            [NSOperationQueue.mainQueue addOperationWithBlock:^{
-                if (completion)
-                {
+            if (completion)
+            {
+                [NSOperationQueue.mainQueue addOperationWithBlock:^{
                     completion();
-                }
-            }];
+                }];
+            }
         }
     }];
 }
@@ -309,13 +309,16 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    NSDictionary *venue = self.venues[indexPath.row];
-    NSDictionary *primary = [self primaryCategory:venue];
-    
-    NSString *identifier = primary[@"id"];
-    UIImage *image = self.cachedImages[identifier];
-    
-    self.selectHandler(venue, image);
+    if (self.selectHandler)
+    {
+        NSDictionary *venue = self.venues[indexPath.row];
+        NSDictionary *primary = [self primaryCategory:venue];
+        
+        NSString *identifier = primary[@"id"];
+        UIImage *image = self.cachedImages[identifier];
+        
+        self.selectHandler(venue, image);
+    }
 }
 
 @end

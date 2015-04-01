@@ -232,13 +232,9 @@ NSString * const FSNSCAPISuggestCompletionPath = @"suggestcompletion";
     {
         [self suggestCompletionVenuesForQuery:searchText location:location radius:radius limit:limit completion:completion];
     }
-    else if (searchText.length > 0)
+    else
     {
         [self searchForQuery:searchText location:location radius:radius limit:limit intent:intent completion:completion];
-    }
-    else if (completion)
-    {
-        completion(nil, nil);
     }
 }
 

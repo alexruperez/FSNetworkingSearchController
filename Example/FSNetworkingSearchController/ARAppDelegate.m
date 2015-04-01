@@ -13,7 +13,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [FSNetworkingSearchController configureWithClientID:@"OD2N3R1GVY1QEXUX1VIBECCDSBF32K5MGAVDJ2GIDWXRVL3E" clientSecret:@"0TW5L1EC3TFZPCREUA4GFDKXT2DSPGANSW5WNAILTAAAI3ZQ" redirectURI:@"fsnetworkingsearchcontroller://foursquare"];
+    [FSNetworkingSearchController configureWithClientID:@"YOUR_CLIENT_ID" clientSecret:@"YOUR_CLIENT_SECRET" redirectURI:@"fsnetworkingsearchcontroller://foursquare"];
     
     return YES;
 }
