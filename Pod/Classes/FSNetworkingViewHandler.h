@@ -44,4 +44,6 @@ typedef void(^FSNSCVenueBlock)(NSDictionary *venue, UIImage *categoryImage);
 
 - (IBAction)reloadData:(id)sender;
 
+- (void)reloadData:(NSString*)searchText tableView:(UITableView *)tableView completion:(void (^)(void))completion;
+
 @end

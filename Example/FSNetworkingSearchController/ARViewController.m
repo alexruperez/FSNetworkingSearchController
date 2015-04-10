@@ -13,6 +13,7 @@
 @interface ARViewController ()
 
 @property (weak, nonatomic) IBOutlet FSNetworkingViewHandler *viewHandler;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -21,6 +22,20 @@
 - (BOOL)prefersStatusBarHidden
 {
     return YES;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    if (self.viewHandler.refreshControl)
+    {
+        UIRefreshControl *refreshControl = UIRefreshControl.new;
+        refreshControl.tintColor = self.searchDisplayController.searchResultsTableView.tintColor;
+        refreshControl.layer.zPosition = -1;
+        [refreshControl addTarget:self action:@selector(reloadData:) forControlEvents:UIControlEventValueChanged];
+        [self.tableView addSubview:refreshControl];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -37,6 +52,18 @@
     self.viewHandler.selectHandler = ^(NSDictionary *venue, UIImage *image) {
         NSLog(@"%@", venue);
     };
+    
+    [self reloadData:self];
+}
+
+- (IBAction)reloadData:(id)sender
+{
+    [self.viewHandler reloadData:nil tableView:self.tableView completion:^{
+        if ([sender respondsToSelector:NSSelectorFromString(@"endRefreshing")])
+        {
+            [sender endRefreshing];
+        }
+    }];
 }
 
 @end

@@ -74,7 +74,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 
 - (IBAction)reloadData:(id)sender
 {
-    [self filterContentForSearchText:self.searchDisplayController.searchBar.text tableView:self.searchDisplayController.searchResultsTableView completion:^{
+    [self reloadData:self.searchDisplayController.searchBar.text tableView:self.searchDisplayController.searchResultsTableView completion:^{
         if ([sender respondsToSelector:NSSelectorFromString(@"endRefreshing")])
         {
             [sender endRefreshing];
@@ -82,11 +82,9 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     }];
 }
 
-#pragma mark - UISearchDisplayDelegate
-
-- (void)filterContentForSearchText:(NSString*)searchText tableView:(UITableView *)tableView completion:(void (^)(void))completion
+- (void)reloadData:(NSString*)searchText tableView:(UITableView *)tableView completion:(void (^)(void))completion
 {
-    if (![self.lastSearchText isEqualToString:searchText])
+    if (!searchText.length || ![self.lastSearchText isEqualToString:searchText])
     {
         _lastSearchText = searchText;
         [FSNetworkingSearchController search:searchText completion:^(NSArray *venues, NSError *error) {
@@ -111,9 +109,11 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     }
 }
 
+#pragma mark - UISearchDisplayDelegate
+
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
 {
-    [self filterContentForSearchText:searchString tableView:controller.searchResultsTableView completion:nil];
+    [self reloadData:searchString tableView:controller.searchResultsTableView completion:nil];
     
     return NO;
 }
@@ -146,7 +146,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController
 {
-    [self filterContentForSearchText:searchController.searchBar.text tableView:searchController.searchResultsController.view completion:nil];
+    [self reloadData:searchController.searchBar.text tableView:searchController.searchResultsController.view completion:nil];
 }
 
 #pragma mark - UITableViewDataSource
@@ -170,38 +170,43 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:FSNVHDefaultCellReuseIdentifier];
     }
     
-    cell.textLabel.text = self.venues[indexPath.row][@"name"];
-    cell.textLabel.minimumScaleFactor = FSNVHDefaultMinimumScaleFactor;
-    cell.textLabel.textColor = self.textLabelColor;
-    
-    NSDictionary *location = self.venues[indexPath.row][@"location"];
-    NSMutableString *detail = NSMutableString.new;
-    NSString *address = location[@"address"];
-    if (address && self.addressDetail)
+    if (self.venues.count > indexPath.row)
     {
-        [detail appendString:address];
-        [detail appendString:address.length <= 30 ? @"\n" : @"  "];
-    }
-    if (location[@"distance"] && self.distanceDetail)
-    {
-        [detail appendFormat:@"%d", [location[@"distance"] intValue]];
-        [detail appendString:NSLocalizedString(@" m", @"Meter unit symbol")];
-    }
-    cell.detailTextLabel.text = detail.copy;
-    cell.detailTextLabel.numberOfLines = 0;
-    cell.detailTextLabel.minimumScaleFactor = FSNVHDefaultMinimumScaleFactor;
-    cell.detailTextLabel.textColor = self.detailLabelColor;
-    
-    [cell.imageView.subviews.firstObject removeFromSuperview];
-    cell.imageView.image = nil;
-    
-    if (self.categoryImage)
-    {
-        NSDictionary *primary = [self primaryCategory:self.venues[indexPath.row]];
+        NSDictionary *venue = self.venues[indexPath.row];
         
-        if (primary)
+        cell.textLabel.text = venue[@"name"];
+        cell.textLabel.minimumScaleFactor = FSNVHDefaultMinimumScaleFactor;
+        cell.textLabel.textColor = self.textLabelColor;
+        
+        NSDictionary *location = venue[@"location"];
+        NSMutableString *detail = NSMutableString.new;
+        NSString *address = location[@"address"];
+        if (address && self.addressDetail)
         {
-            [self tableView:tableView setImageForCell:cell withCategory:primary];
+            [detail appendString:address];
+            [detail appendString:address.length <= 30 ? @"\n" : @"  "];
+        }
+        if (location[@"distance"] && self.distanceDetail)
+        {
+            [detail appendFormat:@"%d", [location[@"distance"] intValue]];
+            [detail appendString:NSLocalizedString(@" m", @"Meter unit symbol")];
+        }
+        cell.detailTextLabel.text = detail.copy;
+        cell.detailTextLabel.numberOfLines = 0;
+        cell.detailTextLabel.minimumScaleFactor = FSNVHDefaultMinimumScaleFactor;
+        cell.detailTextLabel.textColor = self.detailLabelColor;
+        
+        [cell.imageView.subviews.firstObject removeFromSuperview];
+        cell.imageView.image = nil;
+        
+        if (self.categoryImage)
+        {
+            NSDictionary *primary = [self primaryCategory:venue];
+            
+            if (primary)
+            {
+                [self tableView:tableView setImageForCell:cell withCategory:primary];
+            }
         }
     }
     
@@ -317,7 +322,7 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    if (self.selectHandler)
+    if (self.selectHandler && self.venues.count > indexPath.row)
     {
         NSDictionary *venue = self.venues[indexPath.row];
         NSDictionary *primary = [self primaryCategory:venue];
