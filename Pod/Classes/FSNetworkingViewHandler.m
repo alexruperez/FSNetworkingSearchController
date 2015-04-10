@@ -30,6 +30,11 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
 
 @implementation FSNetworkingViewHandler
 
++ (BOOL)supportsSecureCoding
+{
+    return YES;
+}
+
 - (instancetype)init
 {
     self = super.init;
@@ -48,6 +53,60 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
     }
     
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)decoder
+{
+    self = super.init;
+    
+    if (self)
+    {
+        self.cellHeight = [decoder decodeFloatForKey:NSStringFromSelector(@selector(cellHeight))];
+        self.refreshControl = [decoder decodeBoolForKey:NSStringFromSelector(@selector(refreshControl))];
+        self.categoryImage = [decoder decodeBoolForKey:NSStringFromSelector(@selector(categoryImage))];
+        self.addressDetail = [decoder decodeBoolForKey:NSStringFromSelector(@selector(addressDetail))];
+        self.distanceDetail = [decoder decodeBoolForKey:NSStringFromSelector(@selector(distanceDetail))];
+        self.textLabelColor = [decoder decodeObjectForKey:NSStringFromSelector(@selector(textLabelColor))];
+        self.detailLabelColor = [decoder decodeObjectForKey:NSStringFromSelector(@selector(detailLabelColor))];
+        self.imageContentMode = [decoder decodeIntegerForKey:NSStringFromSelector(@selector(imageContentMode))];
+        self.imageSize = [decoder decodeIntegerForKey:NSStringFromSelector(@selector(imageSize))];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+    [coder encodeFloat:self.cellHeight forKey:NSStringFromSelector(@selector(cellHeight))];
+    [coder encodeBool:self.refreshControl forKey:NSStringFromSelector(@selector(refreshControl))];
+    [coder encodeBool:self.categoryImage forKey:NSStringFromSelector(@selector(categoryImage))];
+    [coder encodeBool:self.addressDetail forKey:NSStringFromSelector(@selector(addressDetail))];
+    [coder encodeBool:self.distanceDetail forKey:NSStringFromSelector(@selector(distanceDetail))];
+    [coder encodeObject:self.textLabelColor forKey:NSStringFromSelector(@selector(textLabelColor))];
+    [coder encodeObject:self.detailLabelColor forKey:NSStringFromSelector(@selector(detailLabelColor))];
+    [coder encodeInteger:self.imageContentMode forKey:NSStringFromSelector(@selector(imageContentMode))];
+    [coder encodeInteger:self.imageSize forKey:NSStringFromSelector(@selector(imageSize))];
+}
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    FSNetworkingViewHandler *viewHandler = [[FSNetworkingViewHandler allocWithZone:zone] init];
+    
+    if (viewHandler)
+    {
+        viewHandler.selectHandler = self.selectHandler;
+        viewHandler.cellHeight = self.cellHeight;
+        viewHandler.refreshControl = self.refreshControl;
+        viewHandler.categoryImage = self.categoryImage;
+        viewHandler.addressDetail = self.addressDetail;
+        viewHandler.distanceDetail = self.distanceDetail;
+        viewHandler.textLabelColor = self.textLabelColor;
+        viewHandler.detailLabelColor = self.detailLabelColor;
+        viewHandler.imageContentMode = self.imageContentMode;
+        viewHandler.imageSize = self.imageSize;
+    }
+    
+    return viewHandler;
 }
 
 - (NSMutableArray *)venues

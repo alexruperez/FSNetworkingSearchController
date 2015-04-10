@@ -18,7 +18,7 @@ typedef NS_ENUM(NSUInteger, FSNetworkingImageSize) {
 
 typedef void(^FSNSCVenueBlock)(NSDictionary *venue, UIImage *categoryImage);
 
-@interface FSNetworkingViewHandler : NSObject <UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate, UISearchResultsUpdating>
+@interface FSNetworkingViewHandler : NSObject <NSCopying, NSSecureCoding, UITableViewDataSource, UITableViewDelegate, UISearchDisplayDelegate, UISearchResultsUpdating>
 
 @property (copy, nonatomic) FSNSCVenueBlock selectHandler;
 
