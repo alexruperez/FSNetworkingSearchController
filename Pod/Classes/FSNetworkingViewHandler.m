@@ -345,7 +345,9 @@ NSString * const FSNVHDefaultCellReuseIdentifier = @"Cell";
                     [activityIndicatorView removeFromSuperview];
                     cell.imageView.image = image;
                     cell.imageView.contentMode = self.imageContentMode;
+                    [tableView beginUpdates];
                     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+                    [tableView endUpdates];
                 }
             }];
         }
