@@ -1,7 +1,6 @@
 # FSNetworkingSearchController
 
 [![Join the chat at https://gitter.im/alexruperez/FSNetworkingSearchController](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/alexruperez/FSNetworkingSearchController?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 [![Twitter](http://img.shields.io/badge/contact-@alexruperez-blue.svg?style=flat)](http://twitter.com/alexruperez)
 [![GitHub Issues](http://img.shields.io/github/issues/alexruperez/FSNetworkingSearchController.svg?style=flat)](http://github.com/alexruperez/FSNetworkingSearchController/issues)
 [![CI Status](http://img.shields.io/travis/alexruperez/FSNetworkingSearchController.svg?style=flat)](https://travis-ci.org/alexruperez/FSNetworkingSearchController)
