@@ -6,6 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/FSNetworkingSearchController.svg?style=flat)](http://cocoapods.org/pods/FSNetworkingSearchController)
 [![License](https://img.shields.io/cocoapods/l/FSNetworkingSearchController.svg?style=flat)](http://cocoapods.org/pods/FSNetworkingSearchController)
 [![Platform](https://img.shields.io/cocoapods/p/FSNetworkingSearchController.svg?style=flat)](http://cocoapods.org/pods/FSNetworkingSearchController)
+[![Dependency Status](https://www.versioneye.com/user/projects/555b0412634daacd4100019e/badge.svg?style=flat)](https://www.versioneye.com/user/projects/555b0412634daacd4100019e)
 [![Analytics](https://ga-beacon.appspot.com/UA-55329295-1/FSNetworkingSearchController/readme?pixel)](https://github.com/igrigorik/ga-beacon)
 
 
