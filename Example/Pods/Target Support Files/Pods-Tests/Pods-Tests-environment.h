@@ -16,5 +16,5 @@
 #define COCOAPODS_POD_AVAILABLE_FSNetworkingSearchController
 #define COCOAPODS_VERSION_MAJOR_FSNetworkingSearchController 0
 #define COCOAPODS_VERSION_MINOR_FSNetworkingSearchController 1
-#define COCOAPODS_VERSION_PATCH_FSNetworkingSearchController 0
+#define COCOAPODS_VERSION_PATCH_FSNetworkingSearchController 6
 

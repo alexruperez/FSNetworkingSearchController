@@ -1,6 +1,6 @@
 PODS:
   - FSNetworking (0.0.1)
-  - FSNetworkingSearchController (0.1.0):
+  - FSNetworkingSearchController (0.1.6):
     - FSNetworking (~> 0.0)
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FSNetworking: 596048151bffc5917b2bcfa3a840624f49e309fa
-  FSNetworkingSearchController: 4d556751a15b27e0e626a69f1337e4bef94d6362
+  FSNetworkingSearchController: 2d5abca721c0d3e01b4174561210232456dbf164
 
-COCOAPODS: 0.36.1
+COCOAPODS: 0.37.1
