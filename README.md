@@ -13,7 +13,7 @@
 
 ## Overview
 
-Foursquare search controller with suggest completion like Instagram.
+Search controller with suggest completion using Foursquare API following Instagram design.
 
 ![FSNetworkingSearchController Screenshot](https://raw.githubusercontent.com/alexruperez/FSNetworkingSearchController/master/screenshot.gif)
 
